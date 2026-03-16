@@ -3,4 +3,6 @@
 target = "riscv64gc-unknown-none-elf"
 
 [target.riscv64gc-unknown-none-elf]
+# 指定linker script
+# 强制保留 栈帧指针fp 相关操作
 rustflags = ["-Clink-arg=-Tsrc/linker.ld", "-Cforce-frame-pointers=yes"]
