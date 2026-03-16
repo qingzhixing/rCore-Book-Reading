@@ -5,6 +5,7 @@ mod lang_items;
 use core::arch::global_asm;
 global_asm!(include_str!("entry.asm"));
 
+// 在 entry.asm 中被调用，使用需要 no_mangle 防止符号名被修改
 #[unsafe(no_mangle)]
 pub fn rust_main() -> ! {
     clear_bss();
