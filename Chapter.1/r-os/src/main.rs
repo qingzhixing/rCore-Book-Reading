@@ -1,5 +1,6 @@
 #![no_std]
 #![no_main]
+mod console;
 mod lang_items;
 mod sbi;
 
