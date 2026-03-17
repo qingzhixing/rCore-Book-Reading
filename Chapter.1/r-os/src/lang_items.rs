@@ -12,6 +12,7 @@ fn panic(info: &PanicInfo) -> ! {
             info.message()
         );
     } else {
+        println!("Panicked: {}", info.message());
     }
     shutdown(true);
 }
