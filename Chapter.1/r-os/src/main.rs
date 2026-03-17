@@ -1,11 +1,15 @@
+#![deny(warnings)]
 #![no_std]
 #![no_main]
 
+#[macro_use]
 mod console;
 mod lang_items;
+mod logging;
 mod sbi;
 
 use core::arch::global_asm;
+use log::*;
 
 use crate::sbi::shutdown;
 global_asm!(include_str!("entry.asm"));
@@ -15,6 +19,12 @@ global_asm!(include_str!("entry.asm"));
 pub fn rust_main() -> ! {
     clear_bss();
     println!("Hello Rust OS!");
+    logging::init_logger();
+    error!("This is an error");
+    warn!("This is a warning");
+    info!("This is an info");
+    debug!("This is a debug");
+    trace!("This is a trace");
     shutdown(false);
 }
 
