@@ -6,6 +6,8 @@ mod lang_items;
 mod sbi;
 
 use core::arch::global_asm;
+
+use crate::sbi::shutdown;
 global_asm!(include_str!("entry.asm"));
 
 // 在 entry.asm 中被调用，使用需要 no_mangle 防止符号名被修改
@@ -13,8 +15,7 @@ global_asm!(include_str!("entry.asm"));
 pub fn rust_main() -> ! {
     clear_bss();
     println!("Hello Rust OS!");
-    panic!("Shutdown machine!");
-    loop {}
+    shutdown(false);
 }
 
 fn clear_bss() {
