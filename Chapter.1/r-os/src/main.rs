@@ -1,5 +1,6 @@
 #![no_std]
 #![no_main]
+
 mod console;
 mod lang_items;
 mod sbi;
@@ -11,6 +12,8 @@ global_asm!(include_str!("entry.asm"));
 #[unsafe(no_mangle)]
 pub fn rust_main() -> ! {
     clear_bss();
+    println!("Hello Rust OS!");
+    panic!("Shutdown machine!");
     loop {}
 }
 
