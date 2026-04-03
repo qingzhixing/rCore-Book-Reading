@@ -18,6 +18,14 @@ qemu-system-riscv64 \
 
 `-bios` 用于指定 Qemu 开机时的初始化引导程序。
 
+### -s -S
+
+`-s` 可以使 Qemu 监听本地 TCP 端口 1234 等待 GDB 客户端连接，而 `-S` 可以使 Qemu 在收到 GDB 的请求后再开始运行。
+
+### Get Errors Only
+
+`-d guest_errors,unimp,cpu_reset -D /dev/stderr` 可以使 Qemu 只输出错误信息，而其他信息都不输出。并且保留Qemu窗口。
+
 ## Qemu 启动
 
 - 在Qemu模拟的 `virt` 硬件平台上，物理内存的起始物理地址为 `0x80000000` ，物理内存的默认大小为 128MiB.
