@@ -11,10 +11,14 @@
             "id": "96d2a42affc007f2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "note/第一章：应用程序与基本执行环境/rust asm.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "rust asm"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "note/第一章：应用程序与基本执行环境/rust asm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "rust asm 的反向链接列表"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "note/第一章：应用程序与基本执行环境/rust asm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "rust asm 的出链列表"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "note/第一章：应用程序与基本执行环境/rust asm.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "rust asm 的大纲"
             }
           }
         ]
@@ -178,6 +185,7 @@
   },
   "active": "96d2a42affc007f2",
   "lastOpenFiles": [
+    "note/第一章：应用程序与基本执行环境/rust asm.md",
     "note/第一章：应用程序与基本执行环境/no_std environment.md",
     "note/第一章：应用程序与基本执行环境/qemu rv64.md",
     "note/第一章：应用程序与基本执行环境/rust link.md",
